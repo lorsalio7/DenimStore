@@ -1,0 +1,5 @@
+mixin site-navigation(array)
+  each item in array
+    li.site-navigation__item
+      a(href= item.navigationLink class="site-navigation__link")= item.linkName
+

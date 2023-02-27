@@ -1,0 +1,29 @@
+.user-navigation {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-navigation__item:not(:last-of-type) {
+  margin-right: 28px;
+}
+
+.user-navigation__link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.user-navigation__link--search {
+  background-image: url("../img/search-ic.svg");
+}
+
+.user-navigation__link--cart {
+  background-image: url("../img/cart-ic.svg");
+}

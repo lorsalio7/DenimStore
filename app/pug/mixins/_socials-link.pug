@@ -1,0 +1,5 @@
+mixin socialsLink(array)
+  each item in array
+    li.socials__item
+      a(href= item.linkUrl class="socials__link"+" " + item.linkClass title= item.linkTitle)
+

@@ -1,0 +1,4 @@
+mixin siteFooterNavigation(array)
+  each item in array
+    li.site-footer-navigation__item
+      a(href= item.linkUrl).site-footer-navigation__link= item.linkName

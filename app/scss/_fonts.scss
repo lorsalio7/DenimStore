@@ -1,0 +1,6 @@
+// @include font("$name", "$font-family", $weight);
+@include font("AntonRegular", "Anton", 400);
+@include font("WorkSansBold", "Work Sans", 700);
+@include font("WorkSansExtraBold", "Work Sans", 900);
+@include font("WorkSansMedium", "Work Sans", 500);
+@include font("WorkSansRegular", "Work Sans", 400);

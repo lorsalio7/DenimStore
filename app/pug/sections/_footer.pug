@@ -1,0 +1,13 @@
+footer.site-footer
+  .container.site-footer__container
+    if htmlClass === "index-page"
+      a.logo.site-footer__logo
+        img(src="img/footer-logo.svg" width="75" height="17", alt="Online store logo - Nimes")
+    else
+      a(href="/" class="logo site-footer__logo")
+        img(src="img/footer-logo.svg" width="75" height="17", alt="Online store logo - Nimes")
+    .site-footer__navigation
+      ul.site-footer-navigation
+        +siteFooterNavigation(siteFooterNavigation)
+    ul.socials
+      +socialsLink(socials)

@@ -1,0 +1,43 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socials__item:not(:last-of-type) {
+  margin-right: 25px;
+}
+
+.socials__link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+}
+
+.socials__link:hover,
+.socials__link:focus {
+  opacity: 0.65;
+}
+
+.socials__link--vk {
+  background-image: url("../img/vk-ic.svg");
+}
+
+.socials__link--yt {
+  background-image: url("../img/yt-ic.svg");
+}
+
+.socials__link--pin {
+  background-image: url("../img/pinterest-ic.svg");
+}
+
+.socials__link--tw {
+  background-image: url("../img/twitter-ic.svg");
+}

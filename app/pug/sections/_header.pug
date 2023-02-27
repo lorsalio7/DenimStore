@@ -1,0 +1,16 @@
+header.site-header
+  .container.site-header__container
+    if htmlClass === "index-page"
+      a.logo.site-header__logo
+        img(src="img/header-logo.svg" width="75" height="17", alt="Online store logo - Nimes")
+    else
+      a(href="/" class="logo site-header__logo")
+        img(src="img/header-logo.svg" width="75" height="17", alt="Online store logo - Nimes")
+    nav.site-navigation.site-header__site-navigation
+      ul.site-navigation__list
+        +site-navigation(siteNavigation)
+    ul.user-navigation.site-header__user-navigation
+      li.user-navigation__item
+        a(href="#").user-navigation__link.user-navigation__link--search
+      li.user-navigation__item
+        a(href="#").user-navigation__link.user-navigation__link--cart

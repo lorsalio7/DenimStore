@@ -1,0 +1,23 @@
+.site-footer-navigation {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer-navigation__item:not(:last-of-type) {
+  margin-right: 35px;
+}
+
+.site-footer-navigation__link {
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  color: $color-white;
+}
+
+.site-footer-navigation__link:hover,
+.site-footer-navigation__link:focus {
+  text-decoration: underline;
+}

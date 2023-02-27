@@ -1,0 +1,26 @@
+.site-header {
+  padding: 25px 0;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header__logo {
+  flex-basis: 10%;
+  order: 2;
+  text-align: center;
+}
+
+.site-header__site-navigation {
+  flex-basis: 45%;
+  order: 1;
+}
+
+.site-header__user-navigation {
+  flex-basis: 45%;
+  align-content: flex-end;
+  order: 3;
+}
