@@ -10,9 +10,27 @@
 }
 
 .site-navigation__link {
+  position: relative;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
   color: $color-bunker;
+}
+
+.site-navigation__link::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: $color-bunker;
+  transition: width 0.3s ease-in-out;
+}
+
+.site-navigation__link:hover::before,
+.site-navigation__link:focus::before {
+  left: 0;
+  width: 100%;
 }

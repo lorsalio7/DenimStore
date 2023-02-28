@@ -18,6 +18,12 @@
   background-size: 20px;
   background-repeat: no-repeat;
   background-color: transparent;
+  transition: opacity 0.2s linear;
+}
+
+.user-navigation__link:hover,
+.user-navigation__link:focus {
+  opacity: 0.65;
 }
 
 .user-navigation__link--search {

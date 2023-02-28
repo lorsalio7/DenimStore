@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  border: 2px solid $color-bunker;
+  padding: 21px 49px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $color-bunker;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.button:hover,
+.button:focus {
+  color: $color-bunker;
+  background-color: $color-white;
+}
+
+.button--hero {
+  padding: 21px 23px;
+}
