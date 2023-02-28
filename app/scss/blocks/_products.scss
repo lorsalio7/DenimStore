@@ -1,0 +1,12 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0 -15px;
+  padding: 0;
+}
+
+.products__card {
+  margin: 15px;
+}
