@@ -1,0 +1,7 @@
+mixin breadcrumbs(array)
+  each item in array
+    li.breadcrumbs__item
+      if item.activeClass === "true"
+        a(href= item.linkUrl class="breadcrumbs__link breadcrumbs__link--active")= item.linkName
+      else
+        a(href= item.linkUrl class="breadcrumbs__link")= item.linkName

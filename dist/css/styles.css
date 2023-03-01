@@ -1039,3 +1039,110 @@ body {
 .socials__link--tw {
   background-image: url("../img/twitter-ic.svg");
 }
+
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs__item:not(:last-of-type) {
+  margin-right: 11px;
+}
+
+.breadcrumbs__item:not(:last-of-type)::after {
+  content: "/";
+  padding-left: 7px;
+  color: #727a82;
+}
+
+.breadcrumbs__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #727a82;
+}
+
+.breadcrumbs__link--active {
+  color: #151c22;
+}
+
+.breadcrumbs__link:hover,
+.breadcrumbs__link:focus {
+  text-decoration: underline;
+}
+
+.catalog-top {
+  background-color: #f1f2f4;
+}
+
+.catalog-top__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -7px;
+}
+
+.catalog-top__text-content {
+  padding-top: 4px;
+}
+
+.catalog-top__breadcrumbs {
+  margin-bottom: 26px;
+}
+
+.catalog-top__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  color: #151c22;
+}
+
+.catalog-top__media-content {
+  position: relative;
+  margin-right: 71px;
+  margin-left: 88px;
+}
+
+.catalog-top__media-content::before {
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: 0;
+  z-index: 1;
+  width: 232px;
+  height: 176px;
+  background-image: url("../img/catalog-top-right-decor.png");
+  background-repeat: no-repeat;
+}
+
+.catalog-top__media-content::after {
+  content: "";
+  position: absolute;
+  left: -30px;
+  bottom: 0;
+  width: 175px;
+  height: 135px;
+  background-image: url("../img/catalog-top-left-decor.png");
+  background-repeat: no-repeat;
+}
+
+.catalog-top__image {
+  position: relative;
+  z-index: 10;
+  display: block;
+}
