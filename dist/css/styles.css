@@ -484,6 +484,10 @@ body {
   margin-bottom: 121px;
 }
 
+.index-page__bestsellers {
+  margin-bottom: 65px;
+}
+
 .site-header {
   padding: 25px 0;
 }
@@ -778,6 +782,10 @@ body {
   padding: 21px 23px;
 }
 
+.button--news-post {
+  padding: 21px 44px;
+}
+
 .bestsellers__section-header {
   margin-bottom: 47px;
 }
@@ -863,6 +871,53 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #151c22;
+}
+
+.news__section-header {
+  margin-bottom: 62px;
+}
+
+.news-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news-post__outer {
+  padding: 32px 70px 32px 0;
+  background-image: url("../img/news-post-bg.png");
+}
+
+.news-post__inner {
+  padding: 55px 43px 28px;
+  background-color: #f1f2f4;
+}
+
+.news-post__title {
+  margin-top: 0;
+  margin-bottom: 31px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #151c22;
+}
+
+.news-post__date {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+}
+
+.news-post__description {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #727a82;
 }
 
 .site-footer {
