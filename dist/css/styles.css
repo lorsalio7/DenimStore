@@ -488,6 +488,14 @@ body {
   margin-bottom: 65px;
 }
 
+.index-page__news {
+  margin-bottom: 102px;
+}
+
+.index-page__categories {
+  margin-bottom: 104px;
+}
+
 .site-header {
   padding: 25px 0;
 }
@@ -628,8 +636,9 @@ body {
 .hero__link-arrow {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-right: 30px;
+  margin-right: 21px;
   margin-bottom: 48px;
+  margin-left: 9px;
   width: 20px;
   height: 30px;
   background-image: url("../img/arrow-bottom.svg");
@@ -918,6 +927,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #727a82;
+}
+
+.categories__section-header {
+  margin-bottom: 47px;
 }
 
 .site-footer {
