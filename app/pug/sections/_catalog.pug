@@ -1,0 +1,14 @@
+section.catalog
+  .container
+    h2.visually-hidden Catalog of women's jackets
+    div(tabindex="0").catalog__filter.dropdown-filter
+      .dropdown-filter__selected
+        p.dropdown-filter__text Filter by
+      ul.dropdown-filter__list
+        li(tabindex="0").dropdown-filter__option Price: Low to High
+        li(tabindex="0").dropdown-filter__option Price: High to Low
+        li(tabindex="0").dropdown-filter__option Name: A-z
+        li(tabindex="0").dropdown-filter__option Name: Z-a
+    ul.products.catalog__products
+      +products-card(catalogJackets)
+

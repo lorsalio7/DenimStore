@@ -1,6 +1,12 @@
 .products-card__link {
   display: block;
   margin-bottom: 21px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.products-card__link:hover,
+.products-card__link:focus {
+  opacity: 0.7;
 }
 
 .products-card__image {
