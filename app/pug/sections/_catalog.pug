@@ -1,4 +1,4 @@
-section.catalog
+section.catalog.catalog-page__catalog
   .container
     h2.visually-hidden Catalog of women's jackets
     div(tabindex="0").catalog__filter.dropdown-filter
@@ -11,4 +11,9 @@ section.catalog
         li(tabindex="0").dropdown-filter__option Name: Z-a
     ul.products.catalog__products
       +products-card(catalogJackets)
+    .cards-counter.catalog__cards-counter
+      p.cards-counter__text Showing #[span.cards-counter__current 8] of #[span.cards-counter__total 45] items
+      span.cards-counter__progress-line
+    .catalog__load-more-button
+      button(type="button").button.button--more Load more
 

@@ -779,6 +779,7 @@ body {
   -webkit-transition: background-color 0.3s ease, color 0.3s ease;
   -o-transition: background-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
 }
 
 .button:hover,
@@ -793,6 +794,10 @@ body {
 
 .button--news-post {
   padding: 21px 44px;
+}
+
+.button--more {
+  padding: 21px 57px;
 }
 
 .bestsellers__section-header {
@@ -1095,6 +1100,10 @@ body {
   margin-bottom: 40px;
 }
 
+.catalog-page__catalog {
+  margin-bottom: 130px;
+}
+
 .catalog-top {
   background-color: #f1f2f4;
 }
@@ -1167,7 +1176,7 @@ body {
 }
 
 .catalog__products {
-  margin: 0 -33px;
+  margin: 0 -33px 39px;
 }
 
 .catalog__filter {
@@ -1178,6 +1187,16 @@ body {
 
 .catalog__products .products__card {
   margin: 22px 33px;
+}
+
+.catalog__cards-counter {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-width: 200px;
+}
+
+.catalog__load-more-button {
+  text-align: center;
 }
 
 .dropdown-filter {
@@ -1269,4 +1288,36 @@ body {
 .dropdown-filter__option:hover,
 .dropdown-filter__option:focus {
   background-color: #f1f2f4;
+}
+
+.cards-counter {
+  text-align: center;
+}
+
+.cards-counter__text {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #151c22;
+}
+
+.cards-counter__progress-line {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e5e5e5;
+}
+
+.cards-counter__progress-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 20%;
+  height: 2px;
+  background-color: #151c22;
 }

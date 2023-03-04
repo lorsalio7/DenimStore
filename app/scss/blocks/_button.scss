@@ -9,6 +9,7 @@
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
+  cursor: pointer;
 }
 
 .button:hover,
@@ -23,4 +24,8 @@
 
 .button--news-post {
   padding: 21px 44px;
+}
+
+.button--more {
+  padding: 21px 57px;
 }

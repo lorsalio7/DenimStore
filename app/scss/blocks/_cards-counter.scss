@@ -1,0 +1,31 @@
+.cards-counter {
+  text-align: center;
+}
+
+.cards-counter__text {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: $color-bunker;
+}
+
+.cards-counter__progress-line {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: $color-mercury;
+}
+
+.cards-counter__progress-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 20%;
+  height: 2px;
+  background-color: $color-bunker;
+}
