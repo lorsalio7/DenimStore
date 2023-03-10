@@ -1,0 +1,27 @@
+.full-card {
+  display: flex;
+  justify-content: center;
+}
+
+.full-card__subtitle {
+  margin-top: 0;
+  margin-bottom: 23px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: $color-bunker;
+}
+
+.full-card__gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 14px;
+  margin-left: auto;
+  max-width: 570px;
+}
+
+.full-card__info {
+  margin-right: auto;
+  padding-left: 0;
+  max-width: 570px;
+}

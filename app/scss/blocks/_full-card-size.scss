@@ -1,0 +1,28 @@
+.full-card-size .full-card__subtitle {
+  margin-bottom: 17px;
+}
+
+.full-card-size__label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: $color-rolling-stone;
+  cursor: pointer;
+}
+
+.full-card-size__label:hover,
+.full-card-size__label:focus {
+  color: $color-bunker;
+}
+
+.full-card-size__label:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.full-card-size__item {
+  display: none;
+}
+
+.full-card-size__item:checked + .full-card-size__label {
+  color: $color-bunker;
+}

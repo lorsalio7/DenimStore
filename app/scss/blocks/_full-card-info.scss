@@ -1,0 +1,38 @@
+.full-card-info__content {
+  display: block;
+  padding: 61px 70px;
+}
+
+.full-card-info__title {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: $color-bunker;
+}
+
+.full-card-info__description {
+  margin-bottom: 42px;
+  max-width: 377px;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-bunker;
+}
+
+.full-card-info__color {
+  margin-bottom: 40px;
+}
+
+.full-card-info__size {
+  margin-bottom: 32px;
+}
+
+.full-card-info__price {
+  margin-top: 0;
+  margin-bottom: 46px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: $color-bunker;
+}

@@ -5,5 +5,11 @@ block vars
   - var htmlClass = "card-page";
   - var bodyClass = "card-page__body";
 
+block prepend styles
+  link(rel="stylesheet", href="css/swiper-bundle.min.css")
+
 block content
   include ../sections/_card-main.pug
+
+block prepend scripts
+  script(src="js/swiper-bundle.min.js")
