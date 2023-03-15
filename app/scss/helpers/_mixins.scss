@@ -9,3 +9,11 @@
     font-display: swap;
   }
 }
+
+@mixin px720 {
+  @media (max-width: 720px) {
+    @content;
+  }
+}
+
+// @include px720 {}

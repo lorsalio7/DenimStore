@@ -1,5 +1,8 @@
 header.site-header
   .container.site-header__container
+    .site-header__burger-button
+      button(type="button").burger-button
+        span.burger-button__line
     if htmlClass === "index-page"
       a.logo.site-header__logo
         img(src="img/header-logo.svg" width="75" height="17", alt="Online store logo - Nimes")

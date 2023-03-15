@@ -1,5 +1,27 @@
 "use strict";
 
+var burgerButton = document.querySelector(".burger-button");
+var headerSiteMenu = document.querySelector(".site-header__site-navigation");
+burgerButton.addEventListener("click", function () {
+  burgerButton.classList.toggle("burger-button--active");
+  if (burgerButton.classList.contains("burger-button--active")) {
+    openSiteMenu();
+  } else {
+    closeSiteMenu();
+  }
+});
+function openSiteMenu() {
+  headerSiteMenu.style.display = "block";
+  headerSiteMenu.style.maxHeight = headerSiteMenu.scrollHeight + "px";
+}
+function closeSiteMenu() {
+  headerSiteMenu.style.maxHeight = 0;
+  setTimeout(function () {
+    headerSiteMenu.style.display = "none";
+    headerSiteMenu.removeAttribute("style");
+  }, 500);
+}
+;
 var dropdownFilter = document.querySelector(".dropdown-filter");
 if (dropdownFilter) {
   var openDropdown = function openDropdown() {

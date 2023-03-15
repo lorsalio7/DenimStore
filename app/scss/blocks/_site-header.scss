@@ -1,11 +1,27 @@
 .site-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
   padding: 25px 0;
+  box-shadow: 0 0 8px rgba($color-bunker, 50%);
+  background-color: $color-white;
 }
 
 .site-header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.site-header__burger-button {
+  display: none;
+
+  @include px720 {
+    display: block;
+    flex-basis: 45%;
+  }
 }
 
 .site-header__logo {
@@ -17,6 +33,29 @@
 .site-header__site-navigation {
   flex-basis: 45%;
   order: 1;
+
+  @include px720 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    box-shadow:
+      inset 0 4px 4px -2px rgba($color-bunker, 40%),
+      0 2px 4px 0 rgba($color-bunker, 40%);
+    background-color: $color-white;
+    transform: translateY(100%);
+    transition: max-height 0.3s linear;
+  }
+}
+
+.site-header__site-navigation--active {
+  @include px720 {
+    transform: translateY(100%);
+  }
 }
 
 .site-header__user-navigation {
