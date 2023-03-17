@@ -10,6 +10,22 @@
   }
 }
 
+@mixin px375 {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+// @include px375 {}
+
+@mixin px500 {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+// @include px500 {}
+
 @mixin px720 {
   @media (max-width: 720px) {
     @content;
@@ -17,3 +33,11 @@
 }
 
 // @include px720 {}
+
+@mixin px810 {
+  @media (max-width: 810px) {
+    @content;
+  }
+}
+
+// @include px810 {}

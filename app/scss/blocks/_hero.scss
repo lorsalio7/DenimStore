@@ -5,9 +5,14 @@
 .hero__container {
   display: flex;
   margin-top: -7px;
+
+  @include px810 {
+    justify-content: space-between;
+  }
 }
 
 .hero__link-arrow {
+  flex-shrink: 0;
   align-self: flex-end;
   margin-right: 21px;
   margin-bottom: 48px;
@@ -18,6 +23,12 @@
   background-position: 0 center;
   background-repeat: no-repeat;
   animation: jumping 2s ease-in-out infinite;
+
+  @include px810 {
+    flex-grow: 0;
+    flex-basis: 20px;
+    margin-right: 0;
+  }
 }
 
 @keyframes jumping {
@@ -41,11 +52,41 @@
   justify-content: center;
   margin: 0 auto;
   max-width: 890px;
+
+  @include px810 {
+    position: relative;
+    flex-grow: 0;
+    flex-basis: 80%;
+    flex-direction: column;
+    margin: 50px 0 0;
+  }
+
+  @include px500 {
+    flex-basis: 90%;
+  }
+}
+
+.hero__container::after {
+  @include px810 {
+    content: "";
+    flex-basis: 20px;
+    order: 3;
+  }
 }
 
 .hero__text-content {
   margin-right: 51px;
   padding-top: 22px;
+
+  @include px810 {
+    margin-right: 0;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  @include px500 {
+    margin-bottom: 30px;
+  }
 }
 
 .hero__slogan {
@@ -65,6 +106,14 @@
   line-height: 1;
   text-transform: uppercase;
   color: $color-bunker;
+
+  @include px500 {
+    font-size: 110px;
+  }
+
+  @include px375 {
+    font-size: 90px;
+  }
 }
 
 .hero__button {
@@ -75,6 +124,14 @@
   position: relative;
   z-index: 20;
   margin: 50px;
+
+  @include px500 {
+    margin: 30px;
+  }
+
+  @include px375 {
+    margin: 20px;
+  }
 }
 
 .hero__media-content::before {
@@ -88,6 +145,18 @@
   background-image: url("../img/right-stripes-decor.png");
   background-position: 0 0;
   background-repeat: no-repeat;
+
+  @include px500 {
+    left: -30px;
+    top: -30px;
+    width: 170px;
+    height: 130px;
+  }
+
+  @include px375 {
+    left: -20px;
+    top: -20px;
+  }
 }
 
 .hero__media-content::after {
@@ -102,10 +171,24 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   transform: scaleX(-1);
+
+  @include px500 {
+    right: -30px;
+    bottom: -30px;
+    width: 170px;
+    height: 130px;
+  }
+
+  @include px375 {
+    right: -20px;
+    bottom: -20px;
+  }
 }
 
 .hero__image {
   position: relative;
   z-index: 20;
-  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
