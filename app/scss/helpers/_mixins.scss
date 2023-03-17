@@ -41,3 +41,11 @@
 }
 
 // @include px810 {}
+
+@mixin px1230 {
+  @media (max-width: 1230px) {
+    @content;
+  }
+}
+
+// @include px1230 {}
