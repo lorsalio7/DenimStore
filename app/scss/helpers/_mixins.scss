@@ -42,6 +42,14 @@
 
 // @include px810 {}
 
+@mixin px950 {
+  @media (max-width: 950px) {
+    @content;
+  }
+}
+
+// @include px950 {}
+
 @mixin px1230 {
   @media (max-width: 1230px) {
     @content;
