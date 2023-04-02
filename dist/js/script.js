@@ -2,6 +2,15 @@
 
 var burgerButton = document.querySelector(".burger-button");
 var headerSiteMenu = document.querySelector(".site-header__site-navigation");
+var siteHeader = document.querySelector(".site-header");
+window.addEventListener("scroll", function () {
+  var offsetTop = window.pageYOffset;
+  if (offsetTop > 0) {
+    siteHeader.classList.add("site-header--shady");
+  } else {
+    siteHeader.classList.remove("site-header--shady");
+  }
+});
 burgerButton.addEventListener("click", function () {
   burgerButton.classList.toggle("burger-button--active");
   if (burgerButton.classList.contains("burger-button--active")) {

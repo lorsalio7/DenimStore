@@ -4,15 +4,28 @@
   right: 0;
   top: 0;
   z-index: 100;
-  padding: 25px 0;
-  box-shadow: 0 0 8px rgba($color-bunker, 50%);
+  padding: 21px 0;
   background-color: $color-white;
+  transition: box-shadow 0.3s ease;
+
+  @include px720 {
+    padding: 16px 0;
+  }
+}
+
+.site-header--shady {
+  box-shadow: 0 0 8px rgba($color-bunker, 20%);
+  transition: box-shadow 0.3s ease;
 }
 
 .site-header__container {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
+
+  @include px720 {
+    align-items: center;
+  }
 }
 
 .site-header__burger-button {
@@ -44,8 +57,8 @@
     overflow: hidden;
     max-height: 0;
     box-shadow:
-      inset 0 4px 4px -2px rgba($color-bunker, 40%),
-      0 2px 4px 0 rgba($color-bunker, 40%);
+      inset 0 4px 4px -2px rgba($color-bunker, 20%),
+      0 2px 4px 0 rgba($color-bunker, 20%);
     background-color: $color-white;
     transform: translateY(100%);
     transition: max-height 0.3s linear;

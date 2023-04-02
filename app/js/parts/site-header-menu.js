@@ -1,5 +1,15 @@
 const burgerButton = document.querySelector(".burger-button");
 const headerSiteMenu = document.querySelector(".site-header__site-navigation");
+const siteHeader = document.querySelector(".site-header");
+
+window.addEventListener("scroll", () => {
+  let offsetTop = window.pageYOffset;
+  if(offsetTop > 0) {
+    siteHeader.classList.add("site-header--shady");
+  } else {
+    siteHeader.classList.remove("site-header--shady");
+  }
+})
 
 burgerButton.addEventListener("click", () => {
   burgerButton.classList.toggle("burger-button--active");

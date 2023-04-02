@@ -1,13 +1,25 @@
 mixin products-card(array)
   each item in array
-    li.products__card.products-card
-      a(href= item.productUrl).products-card__link
-        if array === catalogJackets
-          img(src= item.productImage width="243" height="270", alt= item.productTitle).products-card__image
-        else
-          img(src= item.productImage width="270" height="349", alt= item.productTitle).products-card__image
-      .products-card__text
-        h3.products-card__title= item.productTitle
-        if item.productPrice
-          p.products-card__price= item.productPrice
+    if htmlClass === "catalog-page"
+      li.products__card.products-card.catalog-page__item
+        a(href= item.productUrl).products-card__link
+          if array === catalogJackets
+            img(src= item.productImage width="243" height="270", alt= item.productTitle).products-card__image
+          else
+            img(src= item.productImage width="270" height="349", alt= item.productTitle).products-card__image
+        .products-card__text
+          h3.products-card__title= item.productTitle
+          if item.productPrice
+            p.products-card__price= item.productPrice
+    else
+      li.products__card.products-card
+        a(href= item.productUrl).products-card__link
+          if array === catalogJackets
+            img(src= item.productImage width="243" height="270", alt= item.productTitle).products-card__image
+          else
+            img(src= item.productImage width="270" height="349", alt= item.productTitle).products-card__image
+        .products-card__text
+          h3.products-card__title= item.productTitle
+          if item.productPrice
+            p.products-card__price= item.productPrice
 

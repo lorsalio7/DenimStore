@@ -1,15 +1,15 @@
 .catalog__products {
   margin: 0 -33px 39px;
+
+  @include px720 {
+    margin: 0 -15px 39px;
+  }
 }
 
 .catalog__filter {
   margin-bottom: 17px;
   margin-left: auto;
   max-width: 244px;
-}
-
-.catalog__products .products__card {
-  margin: 22px 33px;
 }
 
 .catalog__cards-counter {
