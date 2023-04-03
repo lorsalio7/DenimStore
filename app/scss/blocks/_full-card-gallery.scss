@@ -8,6 +8,10 @@
   height: auto;
   background-color: transparent;
   transition: background-color 0.1s ease-in-out;
+
+  @include px500 {
+    width: 15%;
+  }
 }
 
 .full-card-gallery__button:hover {
@@ -34,8 +38,16 @@
   flex-grow: 0;
   order: 2;
   width: 70.1%;
+
+  @include px500 {
+    width: 70%;
+  }
 }
 
 .full-card-gallery__slider {
   margin-bottom: 20px;
+
+  @include px375 {
+    margin-bottom: 0;
+  }
 }

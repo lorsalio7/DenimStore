@@ -1,6 +1,18 @@
 .full-card-info__content {
   display: block;
   padding: 61px 70px;
+
+  @include px950 {
+    padding: 51px 60px;
+  }
+
+  @include px810 {
+    padding: 34px 45px;
+  }
+
+  @include px375 {
+    padding: 30px 35px;
+  }
 }
 
 .full-card-info__title {
@@ -18,10 +30,22 @@
   font-size: 16px;
   line-height: 19px;
   color: $color-bunker;
+
+  @include px810 {
+    margin-bottom: 32px;
+  }
+
+  @include px720 {
+    max-width: 100%;
+  }
 }
 
 .full-card-info__color {
   margin-bottom: 40px;
+
+  @include px810 {
+    margin-bottom: 30px;
+  }
 }
 
 .full-card-info__size {

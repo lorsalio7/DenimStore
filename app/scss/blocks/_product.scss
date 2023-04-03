@@ -1,10 +1,27 @@
 .product__gallery {
+  flex: 0 0 50%;
   margin-right: 32px;
-  width: 100%;
+  max-width: 50%;
   background-color: $color-white;
+
+  @include px810 {
+    margin-right: 15px;
+  }
+
+  @include px720 {
+    flex: 0 0 100%;
+    margin-right: 0;
+    max-width: 100%;
+  }
 }
 
 .product__info {
-  width: 100%;
+  flex: 0 0 50%;
+  max-width: 50%;
   background-color: $color-athens-gray;
+
+  @include px720 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }

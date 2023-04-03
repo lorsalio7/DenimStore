@@ -1,6 +1,10 @@
 .full-card {
   display: flex;
   justify-content: center;
+
+  @include px720 {
+    flex-direction: column;
+  }
 }
 
 .full-card__subtitle {
@@ -17,11 +21,28 @@
   justify-content: space-between;
   margin-right: 14px;
   margin-left: auto;
+  padding-left: 15px;
   max-width: 570px;
+
+  @include px950 {
+    margin-right: 0;
+  }
+
+  @include px720 {
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+    padding-left: 0;
+  }
 }
 
 .full-card__info {
   margin-right: auto;
   padding-left: 0;
   max-width: 570px;
+
+  @include px720 {
+    margin-right: 0;
+    max-width: 100%;
+  }
 }

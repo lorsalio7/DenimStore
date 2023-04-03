@@ -2,8 +2,15 @@ let gallerySlider = document.querySelector(".full-card-slider");
 
 if(gallerySlider) {
   let productGalleryThumbsSlider = new Swiper(".full-card-slider-thumbs", {
-    slidesPerView: 4,
-    spaceBetween: 20,
+    slidesPerView: 3,
+    spaceBetween: 40,
+
+    breakpoints: {
+      500: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      }
+    }
   });
 
   let productGallery = new Swiper(gallerySlider, {
