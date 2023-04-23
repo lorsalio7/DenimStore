@@ -24,8 +24,5 @@ if(gallerySlider) {
       swiper: productGalleryThumbsSlider
     }
   });
-
-
-
 }
 
