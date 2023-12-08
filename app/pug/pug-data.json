@@ -1,0 +1,201 @@
+{
+  "siteNavigation": [
+    {
+      "navigationLink": "#",
+      "linkName": "Woman"
+    },
+    {
+      "navigationLink": "#",
+      "linkName": "Man"
+    },
+    {
+      "navigationLink": "#",
+      "linkName": "New"
+    }
+  ],
+  "siteFooterNavigation": [
+    {
+      "linkUrl": "#",
+      "linkName": "Shop"
+    },
+    {
+      "linkUrl": "#",
+      "linkName": "Delivery"
+    },
+    {
+      "linkUrl": "#",
+      "linkName": "Service"
+    },
+    {
+      "linkUrl": "#",
+      "linkName": "Sitemap"
+    },
+    {
+      "linkUrl": "#",
+      "linkName": "Contacts"
+    }
+  ],
+  "socials": [
+    {
+      "linkUrl": "#",
+      "linkTitle": "We are on Vkontakte",
+      "linkClass": "socials__link--vk"
+    },
+    {
+      "linkUrl": "#",
+      "linkTitle": "We are on YouTube",
+      "linkClass": "socials__link--yt"
+    },
+    {
+      "linkUrl": "#",
+      "linkTitle": "We are on Pinterest",
+      "linkClass": "socials__link--pin"
+    },
+    {
+      "linkUrl": "#",
+      "linkTitle": "We are on Twitter",
+      "linkClass": "socials__link--tw"
+    }
+  ],
+  "bestsellers": [
+    {
+      "productUrl": "#",
+      "productImage": "img/bestsellers-jacket.jpg",
+      "productTitle": "Jacket",
+      "productPrice": "$120"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/bestsellers-overalls.jpg",
+      "productTitle": "Overalls",
+      "productPrice": "$140"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/bestsellers-jacket-2.jpg",
+      "productTitle": "Jacket",
+      "productPrice": "$90"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/bestsellers-overalls-2.jpg",
+      "productTitle": "Overalls",
+      "productPrice": "$160"
+    }
+  ],
+  "categories": [
+    {
+      "productUrl": "#",
+      "productImage": "img/category-jeans.jpg",
+      "productTitle": "Jeans"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/category-shirts.jpg",
+      "productTitle": "Shirts"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/category-jackets.jpg",
+      "productTitle": "Jackets"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/category-overalls.jpg",
+      "productTitle": "Overalls"
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "linkUrl": "#",
+      "activeClass": "false",
+      "linkName": "All categories"
+    },
+    {
+      "linkUrl": "#",
+      "activeClass": "false",
+      "linkName": "Woman"
+    },
+    {
+      "linkUrl": "#",
+      "activeClass": "true",
+      "linkName": "Jackets"
+    }
+  ],
+  "catalogJackets": [
+    {
+      "productUrl": "#",
+      "productImage": "img/catalog-jacket-1.jpg",
+      "productTitle": "Jacket",
+      "productPrice": "$40"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/catalog-jacket-2.jpg",
+      "productTitle": "Jacket",
+      "productPrice": "$70"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/catalog-jacket-3.jpg",
+      "productTitle": "Jacket",
+      "productPrice": "$60"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/catalog-jacket-4.jpg",
+      "productTitle": "Jacket",
+      "productPrice": "$50"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/catalog-jacket-5.jpg",
+      "productTitle": "Jacket",
+      "productPrice": "$40"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/catalog-jacket-6.jpg",
+      "productTitle": "Jacket",
+      "productPrice": "$110"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/catalog-jacket-7.jpg",
+      "productTitle": "Jacket",
+      "productPrice": "$35"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/catalog-jacket-8.jpg",
+      "productTitle": "Jacket",
+      "productPrice": "$85"
+    }
+  ],
+  "extraProducts": [
+    {
+      "productUrl": "#",
+      "productImage": "img/extra-image-1.jpg",
+      "productTitle": "Overalls",
+      "productPrice": "$140"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/extra-image-2.jpg",
+      "productTitle": "Overalls",
+      "productPrice": "$110"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/extra-image-3.jpg",
+      "productTitle": "Jacket",
+      "productPrice": "$70"
+    },
+    {
+      "productUrl": "#",
+      "productImage": "img/extra-image-4.jpg",
+      "productTitle": "Jacket",
+      "productPrice": "$60"
+    }
+  ]
+}
