@@ -404,7 +404,7 @@ template {
 }
 
 @font-face {
-  src: local(""), url("../fonts/AntonRegular.woff2") format("woff2");
+  src: local("Anton Regular"), local("Anton-Regular"), url("../fonts/AntonRegular.woff2") format("woff2");
   font-family: "Anton";
   font-weight: 400;
   font-style: normal;
@@ -412,7 +412,7 @@ template {
 }
 
 @font-face {
-  src: local(""), url("../fonts/WorkSansBold.woff2") format("woff2");
+  src: local("Work Sans Bold"), local("Work-Sans-Bold"), url("../fonts/WorkSansBold.woff2") format("woff2");
   font-family: "Work Sans";
   font-weight: 700;
   font-style: normal;
@@ -420,7 +420,7 @@ template {
 }
 
 @font-face {
-  src: local(""), url("../fonts/WorkSansExtraBold.woff2") format("woff2");
+  src: local("Work Sans ExtraBold"), local("Work-Sans-ExtraBold"), url("../fonts/WorkSansExtraBold.woff2") format("woff2");
   font-family: "Work Sans";
   font-weight: 900;
   font-style: normal;
@@ -428,7 +428,7 @@ template {
 }
 
 @font-face {
-  src: local(""), url("../fonts/WorkSansMedium.woff2") format("woff2");
+  src: local("Work Sans Medium"), local("Work-Sans-Medium"), url("../fonts/WorkSansMedium.woff2") format("woff2");
   font-family: "Work Sans";
   font-weight: 500;
   font-style: normal;
@@ -436,7 +436,7 @@ template {
 }
 
 @font-face {
-  src: local(""), url("../fonts/WorkSansRegular.woff2") format("woff2");
+  src: local("Work Sans Regular"), local("Work-Sans-Regular"), url("../fonts/WorkSansRegular.woff2") format("woff2");
   font-family: "Work Sans";
   font-weight: 400;
   font-style: normal;

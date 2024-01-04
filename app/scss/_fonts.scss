@@ -1,6 +1,6 @@
-// @include font("$name", "$font-family", $weight);
-@include font("AntonRegular", "Anton", 400);
-@include font("WorkSansBold", "Work Sans", 700);
-@include font("WorkSansExtraBold", "Work Sans", 900);
-@include font("WorkSansMedium", "Work Sans", 500);
-@include font("WorkSansRegular", "Work Sans", 400);
+// @include font("$name", "$font-family", $weight, $style, $font-name-local, $font-name-local-alternate);
+@include font("AntonRegular", "Anton", 400, normal, "Anton Regular", "Anton-Regular");
+@include font("WorkSansBold", "Work Sans", 700, normal, "Work Sans Bold", "Work-Sans-Bold");
+@include font("WorkSansExtraBold", "Work Sans", 900, normal, "Work Sans ExtraBold", "Work-Sans-ExtraBold");
+@include font("WorkSansMedium", "Work Sans", 500, normal, "Work Sans Medium", "Work-Sans-Medium");
+@include font("WorkSansRegular", "Work Sans", 400, normal, "Work Sans Regular", "Work-Sans-Regular");
