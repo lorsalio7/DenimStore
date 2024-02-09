@@ -382,6 +382,14 @@ template {
   display: none;
 }
 
+/* @include outline; */
+
+/* @include outline-inner; */
+
+/* @include hover {} */
+
+/* @include hover-focus {} */
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
