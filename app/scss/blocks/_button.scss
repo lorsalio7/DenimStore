@@ -10,12 +10,11 @@
     background-color 0.3s ease,
     color 0.3s ease;
   cursor: pointer;
-}
 
-.button:hover,
-.button:focus {
-  color: $color-bunker;
-  background-color: $color-white;
+  @include hover {
+    color: $color-bunker;
+    background-color: $color-white;
+  }
 }
 
 .button--hero {

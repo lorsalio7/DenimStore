@@ -68,9 +68,8 @@
   padding: 8px 16px;
   font-weight: 500;
   cursor: pointer;
-}
 
-.dropdown-filter__option:hover,
-.dropdown-filter__option:focus {
-  background-color: $color-athens-gray;
+  @include hover {
+    background-color: $color-athens-gray;
+  }
 }

@@ -8,11 +8,10 @@
   line-height: 21px;
   color: $color-rolling-stone;
   cursor: pointer;
-}
 
-.full-card-size__label:hover,
-.full-card-size__label:focus {
-  color: $color-bunker;
+  @include hover {
+    color: $color-bunker;
+  }
 }
 
 .full-card-size__label:not(:last-of-type) {

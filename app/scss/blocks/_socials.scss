@@ -19,11 +19,10 @@
   background-repeat: no-repeat;
   transition: opacity 0.2s linear;
   cursor: pointer;
-}
 
-.socials__link:hover,
-.socials__link:focus {
-  opacity: 0.65;
+  @include hover {
+    opacity: 0.65;
+  }
 }
 
 .socials__link--vk {

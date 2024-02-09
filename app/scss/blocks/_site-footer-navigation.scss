@@ -16,9 +16,8 @@
   line-height: 21px;
   text-decoration: none;
   color: $color-white;
-}
 
-.site-footer-navigation__link:hover,
-.site-footer-navigation__link:focus {
-  text-decoration: underline;
+  @include hover {
+    text-decoration: underline;
+  }
 }

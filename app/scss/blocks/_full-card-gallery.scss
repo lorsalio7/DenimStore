@@ -9,13 +9,13 @@
   background-color: transparent;
   transition: background-color 0.1s ease-in-out;
 
+  @include hover {
+    background-color: $color-athens-gray;
+  }
+
   @include px500 {
     width: 15%;
   }
-}
-
-.full-card-gallery__button:hover {
-  background-color: $color-athens-gray;
 }
 
 .full-card-gallery__button--next {

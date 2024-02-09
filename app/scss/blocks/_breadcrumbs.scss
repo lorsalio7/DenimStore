@@ -35,6 +35,10 @@
   text-decoration: none;
   color: $color-rolling-stone;
 
+  @include hover {
+    text-decoration: underline;
+  }
+
   @include px810 {
     font-size: 16px;
   }
@@ -42,9 +46,4 @@
 
 .breadcrumbs__link--active {
   color: $color-bunker;
-}
-
-.breadcrumbs__link:hover,
-.breadcrumbs__link:focus {
-  text-decoration: underline;
 }

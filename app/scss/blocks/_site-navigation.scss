@@ -23,6 +23,13 @@
   line-height: 19px;
   text-decoration: none;
   color: $color-bunker;
+
+  @include hover {
+    &::before {
+      left: 0;
+      width: 100%;
+    }
+  }
 }
 
 .site-navigation__link::before {
@@ -34,10 +41,4 @@
   height: 2px;
   background-color: $color-bunker;
   transition: width 0.3s ease-in-out;
-}
-
-.site-navigation__link:hover::before,
-.site-navigation__link:focus::before {
-  left: 0;
-  width: 100%;
 }
