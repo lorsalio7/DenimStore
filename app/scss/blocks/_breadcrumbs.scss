@@ -35,6 +35,10 @@
   text-decoration: none;
   color: $color-rolling-stone;
 
+  &:focus {
+    @include outline;
+  }
+
   @include hover {
     text-decoration: underline;
   }

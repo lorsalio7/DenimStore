@@ -1,3 +1,15 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  &:focus {
+    @include outline;
+  }
+}
+
 .logo__image {
   display: block;
+  width: 75px;
+  height: 17px;
 }

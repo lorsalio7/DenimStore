@@ -20,6 +20,10 @@
   transition: opacity 0.2s linear;
   cursor: pointer;
 
+  &:focus {
+    @include outline;
+  }
+
   @include hover {
     opacity: 0.65;
   }

@@ -11,6 +11,10 @@
     color 0.3s ease;
   cursor: pointer;
 
+  &:focus {
+    @include outline;
+  }
+
   @include hover {
     color: $color-bunker;
     background-color: $color-white;

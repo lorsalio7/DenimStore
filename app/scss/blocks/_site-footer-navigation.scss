@@ -17,6 +17,10 @@
   text-decoration: none;
   color: $color-white;
 
+  &:focus {
+    @include outline;
+  }
+
   @include hover {
     text-decoration: underline;
   }

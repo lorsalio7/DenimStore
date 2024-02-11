@@ -9,6 +9,10 @@
   background-color: transparent;
   transition: background-color 0.1s ease-in-out;
 
+  &:focus {
+    @include outline;
+  }
+
   @include hover {
     background-color: $color-athens-gray;
   }

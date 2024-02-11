@@ -24,6 +24,10 @@
   background-repeat: no-repeat;
   animation: jumping 2s ease-in-out infinite;
 
+  &:focus {
+    @include outline;
+  }
+
   @include px810 {
     flex-grow: 0;
     flex-basis: 20px;

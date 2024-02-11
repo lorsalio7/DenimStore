@@ -19,9 +19,14 @@
 }
 
 .full-card-size__item {
-  display: none;
+  width: 0;
+  height: 0;
 }
 
 .full-card-size__item:checked + .full-card-size__label {
   color: $color-bunker;
+}
+
+.full-card-size__item:focus + .full-card-size__label {
+  @include outline;
 }

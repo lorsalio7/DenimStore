@@ -1,6 +1,10 @@
 .dropdown-filter {
   position: relative;
   border: 2px solid $color-bunker;
+
+  &:focus {
+    @include outline;
+  }
 }
 
 .dropdown-filter__selected {

@@ -24,6 +24,10 @@
   text-decoration: none;
   color: $color-bunker;
 
+  &:focus {
+    @include outline;
+  }
+
   @include hover {
     &::before {
       left: 0;

@@ -12,14 +12,14 @@
 }
 
 @mixin outline {
-  outline: 2px solid var(--color-outline);
+  outline: 2px solid $color-outline;
   outline-offset: 2px;
 }
 
 /* @include outline; */
 
 @mixin outline-inner {
-  outline: 2px solid var(--color-outline);
+  outline: 2px solid $color-outline;
   outline-offset: -2px;
 }
 
