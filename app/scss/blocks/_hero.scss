@@ -6,7 +6,7 @@
   display: flex;
   margin-top: -7px;
 
-  @include px810 {
+  @include max-lg {
     justify-content: space-between;
   }
 }
@@ -28,7 +28,7 @@
     @include outline;
   }
 
-  @include px810 {
+  @include max-lg {
     flex-grow: 0;
     flex-basis: 20px;
     margin-right: 0;
@@ -57,7 +57,7 @@
   margin: 0 auto;
   max-width: 890px;
 
-  @include px810 {
+  @include max-lg {
     position: relative;
     flex-grow: 0;
     flex-basis: 80%;
@@ -65,13 +65,13 @@
     margin: 50px 0 0;
   }
 
-  @include px500 {
+  @include max-xs {
     flex-basis: 90%;
   }
 }
 
 .hero__container::after {
-  @include px810 {
+  @include max-lg {
     content: "";
     flex-basis: 20px;
     order: 3;
@@ -82,13 +82,13 @@
   margin-right: 51px;
   padding-top: 22px;
 
-  @include px810 {
+  @include max-lg {
     margin-right: 0;
     margin-bottom: 50px;
     text-align: center;
   }
 
-  @include px500 {
+  @include max-xs {
     margin-bottom: 30px;
   }
 }
@@ -111,11 +111,11 @@
   text-transform: uppercase;
   color: $color-bunker;
 
-  @include px500 {
+  @include max-xs {
     font-size: 110px;
   }
 
-  @include px375 {
+  @include max-xxs {
     font-size: 90px;
   }
 }
@@ -129,11 +129,11 @@
   z-index: 20;
   margin: 50px;
 
-  @include px500 {
+  @include max-xs {
     margin: 30px;
   }
 
-  @include px375 {
+  @include max-xxs {
     margin: 20px;
   }
 }
@@ -150,14 +150,14 @@
   background-position: 0 0;
   background-repeat: no-repeat;
 
-  @include px500 {
+  @include max-xs {
     left: -30px;
     top: -30px;
     width: 170px;
     height: 130px;
   }
 
-  @include px375 {
+  @include max-xxs {
     left: -20px;
     top: -20px;
   }
@@ -176,14 +176,14 @@
   background-repeat: no-repeat;
   transform: scaleX(-1);
 
-  @include px500 {
+  @include max-xs {
     right: -30px;
     bottom: -30px;
     width: 170px;
     height: 130px;
   }
 
-  @include px375 {
+  @include max-xxs {
     right: -20px;
     bottom: -20px;
   }

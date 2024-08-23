@@ -1,7 +1,7 @@
 .catalog-top {
   background-color: $color-athens-gray;
 
-  @include px720 {
+  @include max-md {
     padding-top: 60px;
   }
 }
@@ -12,11 +12,11 @@
   justify-content: center;
   margin-top: -7px;
 
-  @include px810 {
+  @include max-lg {
     justify-content: space-between;
   }
 
-  @include px720 {
+  @include max-md {
     flex-direction: column;
   }
 }
@@ -24,7 +24,7 @@
 .catalog-top__text-content {
   padding-top: 4px;
 
-  @include px720 {
+  @include max-md {
     align-self: flex-start;
     margin-bottom: 40px;
   }
@@ -33,7 +33,7 @@
 .catalog-top__breadcrumbs {
   margin-bottom: 26px;
 
-  @include px720 {
+  @include max-md {
     margin-bottom: 16px;
   }
 }
@@ -49,7 +49,7 @@
   text-transform: capitalize;
   color: $color-bunker;
 
-  @include px720 {
+  @include max-md {
     max-width: 100%;
   }
 }
@@ -59,17 +59,17 @@
   margin-right: 71px;
   margin-left: 67px;
 
-  @include px950 {
+  @include max-xl {
     margin-right: 30px;
     margin-left: 110px;
   }
 
-  @include px810 {
+  @include max-lg {
     margin-right: 30px;
     margin-left: 60px;
   }
 
-  @include px720 {
+  @include max-md {
     margin-right: 15px;
     margin-left: 15px;
   }
@@ -86,7 +86,7 @@
   background-image: url("../img/catalog-top-right-decor.png");
   background-repeat: no-repeat;
 
-  @include px375 {
+  @include max-xxs {
     right: -15px;
   }
 }
@@ -101,7 +101,7 @@
   background-image: url("../img/catalog-top-left-decor.png");
   background-repeat: no-repeat;
 
-  @include px375 {
+  @include max-xxs {
     left: -15px;
   }
 }

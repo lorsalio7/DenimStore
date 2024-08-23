@@ -4,7 +4,7 @@
   height: 100%;
   object-fit: contain;
 
-  @include px375 {
+  @include max-xxs {
     display: none;
   }
 }

@@ -11,7 +11,7 @@
   line-height: 38px;
   color: $color-bunker;
 
-  @include px500 {
+  @include max-xs {
     font-size: 26px;
     line-height: 32px;
   }

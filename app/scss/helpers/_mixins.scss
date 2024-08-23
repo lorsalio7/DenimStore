@@ -49,58 +49,69 @@
 
 /* @include hover-focus {} */
 
-@mixin px375 {
-  @media (max-width: 375px) {
+/*
+Шаблон переменных медиа запросов
+
+$xxs: 320px;
+$xs: 375px;
+$sm: 425px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+$xxxl: 1920px; */
+
+$xxs: 375px;
+$xs: 500px;
+$sm: 600px;
+$md: 720px;
+$lg: 810px;
+$xl: 950px;
+
+@mixin max-xxs {
+  @media (max-width: $xxs) {
     @content;
   }
 }
 
-// @include px375 {}
+// @include max-xxs {}
 
-@mixin px500 {
-  @media (max-width: 500px) {
+@mixin max-xs {
+  @media (max-width: $xs) {
     @content;
   }
 }
 
-// @include px500 {}
+// @include max-xs {}
 
-@mixin px600 {
-  @media (max-width: 600px) {
+@mixin max-sm {
+  @media (max-width: $sm) {
     @content;
   }
 }
 
-// @include px600 {}
+// @include max-sm {}
 
-@mixin px720 {
-  @media (max-width: 720px) {
+@mixin max-md {
+  @media (max-width: $md) {
     @content;
   }
 }
 
-// @include px720 {}
+// @include max-md {}
 
-@mixin px810 {
-  @media (max-width: 810px) {
+@mixin max-lg {
+  @media (max-width: $lg) {
     @content;
   }
 }
 
-// @include px810 {}
+// @include max-lg {}
 
-@mixin px950 {
-  @media (max-width: 950px) {
+@mixin max-xl {
+  @media (max-width: $xl) {
     @content;
   }
 }
 
-// @include px950 {}
-
-@mixin px1230 {
-  @media (max-width: 1230px) {
-    @content;
-  }
-}
-
-// @include px1230 {}
+// @include max-xl {}

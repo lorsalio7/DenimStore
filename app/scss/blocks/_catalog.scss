@@ -1,7 +1,7 @@
 .catalog__products {
   margin: 0 -33px 39px;
 
-  @include px720 {
+  @include max-md {
     margin: 0 -15px 39px;
   }
 }

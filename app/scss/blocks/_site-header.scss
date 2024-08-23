@@ -8,7 +8,7 @@
   background-color: $color-white;
   transition: box-shadow 0.3s ease;
 
-  @include px720 {
+  @include max-md {
     padding: 16px 0;
   }
 }
@@ -23,7 +23,7 @@
   align-items: flex-end;
   justify-content: space-between;
 
-  @include px720 {
+  @include max-md {
     align-items: center;
   }
 }
@@ -31,7 +31,7 @@
 .site-header__burger-button {
   display: none;
 
-  @include px720 {
+  @include max-md {
     display: block;
     flex-basis: 45%;
   }
@@ -47,7 +47,7 @@
   flex-basis: 45%;
   order: 1;
 
-  @include px720 {
+  @include max-md {
     position: absolute;
     left: 0;
     right: 0;
@@ -66,7 +66,7 @@
 }
 
 .site-header__site-navigation--active {
-  @include px720 {
+  @include max-md {
     transform: translateY(100%);
   }
 }

@@ -9,7 +9,7 @@
 .user-navigation__item:not(:last-of-type) {
   margin-right: 28px;
 
-  @include px375 {
+  @include max-xxs {
     margin-right: 20px;
   }
 }

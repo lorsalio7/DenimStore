@@ -4,11 +4,11 @@
   max-width: 50%;
   background-color: $color-white;
 
-  @include px810 {
+  @include max-lg {
     margin-right: 15px;
   }
 
-  @include px720 {
+  @include max-md {
     flex: 0 0 100%;
     margin-right: 0;
     max-width: 100%;
@@ -20,7 +20,7 @@
   max-width: 50%;
   background-color: $color-athens-gray;
 
-  @include px720 {
+  @include max-md {
     flex: 0 0 100%;
     max-width: 100%;
   }

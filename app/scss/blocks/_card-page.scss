@@ -2,7 +2,7 @@
   margin-top: 122px;
   margin-bottom: 121px;
 
-  @include px720 {
+  @include max-md {
     margin-top: 100px;
   }
 }

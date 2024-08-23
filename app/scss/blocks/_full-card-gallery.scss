@@ -17,7 +17,7 @@
     background-color: $color-athens-gray;
   }
 
-  @include px500 {
+  @include max-xs {
     width: 15%;
   }
 }
@@ -43,7 +43,7 @@
   order: 2;
   width: 70.1%;
 
-  @include px500 {
+  @include max-xs {
     width: 70%;
   }
 }
@@ -51,7 +51,7 @@
 .full-card-gallery__slider {
   margin-bottom: 20px;
 
-  @include px375 {
+  @include max-xxs {
     margin-bottom: 0;
   }
 }
