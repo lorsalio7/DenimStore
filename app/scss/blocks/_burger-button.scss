@@ -21,6 +21,7 @@
   background-color: $color-bunker;
   transform: translate(-50%, -50%);
   transition: background-color 0.3s ease;
+  pointer-events: none;
 }
 
 .burger-button__line::before {

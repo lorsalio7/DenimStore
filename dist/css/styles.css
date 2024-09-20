@@ -728,6 +728,7 @@ body {
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
+  pointer-events: none;
 }
 
 .burger-button__line::before {

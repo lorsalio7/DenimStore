@@ -20,11 +20,13 @@ burgerButton.addEventListener("click", function () {
   }
 });
 function openSiteMenu() {
+  burgerButton.setAttribute("aria-label", "Закрыть меню");
   headerSiteMenu.style.display = "block";
   headerSiteMenu.style.maxHeight = headerSiteMenu.scrollHeight + "px";
 }
 function closeSiteMenu() {
   headerSiteMenu.style.maxHeight = 0;
+  burgerButton.setAttribute("aria-label", "Открыть меню");
   setTimeout(function () {
     headerSiteMenu.style.display = "none";
     headerSiteMenu.removeAttribute("style");
