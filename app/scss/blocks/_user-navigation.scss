@@ -1,4 +1,6 @@
 .user-navigation {
+  position: relative;
+  z-index: 101;
   display: flex;
   justify-content: flex-end;
   list-style-type: none;

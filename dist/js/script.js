@@ -3,6 +3,7 @@
 var burgerButton = document.querySelector(".burger-button");
 var headerSiteMenu = document.querySelector(".site-header__site-navigation");
 var siteHeader = document.querySelector(".site-header");
+var burgerMenuWidth = window.matchMedia("(max-width: 720px)");
 window.addEventListener("scroll", function () {
   var offsetTop = window.pageYOffset;
   if (offsetTop > 0) {
@@ -22,17 +23,26 @@ burgerButton.addEventListener("click", function () {
 function openSiteMenu() {
   burgerButton.setAttribute("aria-label", "Закрыть меню");
   headerSiteMenu.style.display = "block";
-  headerSiteMenu.style.maxHeight = headerSiteMenu.scrollHeight + "px";
+  setTimeout(function () {
+    headerSiteMenu.classList.add("site-header__site-navigation--active");
+  }, 10);
 }
 function closeSiteMenu() {
-  headerSiteMenu.style.maxHeight = 0;
   burgerButton.setAttribute("aria-label", "Открыть меню");
+  burgerButton.classList.remove("burger-button--active");
+  headerSiteMenu.classList.remove("site-header__site-navigation--active");
   setTimeout(function () {
-    headerSiteMenu.style.display = "none";
     headerSiteMenu.removeAttribute("style");
   }, 500);
 }
-;
+function changeMenuView(width) {
+  if (!width) {
+    closeSiteMenu();
+  }
+}
+burgerMenuWidth.onchange = function (e) {
+  changeMenuView(e.matches);
+};
 var dropdownFilter = document.querySelector(".dropdown-filter");
 if (dropdownFilter) {
   var openDropdown = function openDropdown() {

@@ -1,6 +1,7 @@
 const burgerButton = document.querySelector(".burger-button");
 const headerSiteMenu = document.querySelector(".site-header__site-navigation");
 const siteHeader = document.querySelector(".site-header");
+const burgerMenuWidth = window.matchMedia("(max-width: 720px)");
 
 window.addEventListener("scroll", () => {
   let offsetTop = window.pageYOffset;
@@ -23,14 +24,26 @@ burgerButton.addEventListener("click", () => {
 function openSiteMenu() {
   burgerButton.setAttribute("aria-label", "Закрыть меню");
   headerSiteMenu.style.display = "block";
-  headerSiteMenu.style.maxHeight = headerSiteMenu.scrollHeight + "px";
+  setTimeout(() => {
+    headerSiteMenu.classList.add("site-header__site-navigation--active");
+  }, 10);
 }
 
 function closeSiteMenu() {
-  headerSiteMenu.style.maxHeight = 0;
   burgerButton.setAttribute("aria-label", "Открыть меню");
+  burgerButton.classList.remove("burger-button--active");
+  headerSiteMenu.classList.remove("site-header__site-navigation--active");
   setTimeout(() => {
-    headerSiteMenu.style.display = "none";
     headerSiteMenu.removeAttribute("style");
-  },500)
+  },500);
+}
+
+function changeMenuView(width) {
+  if(!width) {
+    closeSiteMenu();
+  }
+}
+
+burgerMenuWidth.onchange = (e) => {
+  changeMenuView(e.matches);
 }
