@@ -2,10 +2,10 @@ footer.site-footer
   .container.site-footer__container
     if htmlClass === "index-page"
       a.logo.site-footer__logo
-        img(src="img/footer-logo.svg" width="75" height="17", alt="Online store logo - Nimes")
+        img(src="img/footer-logo.svg" width="73" height="19", alt="Online store logo - Nimes").logo__image
     else
       a(href="/" class="logo site-footer__logo")
-        img(src="img/footer-logo.svg" width="75" height="17", alt="Online store logo - Nimes")
+        img(src="img/footer-logo.svg" width="73" height="19", alt="Online store logo - Nimes").logo__image
     .site-footer__navigation
       ul.site-footer-navigation
         +siteFooterNavigation(pugData.siteFooterNavigation)

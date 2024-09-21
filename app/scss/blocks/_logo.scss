@@ -1,6 +1,5 @@
 .logo {
   position: relative;
-  z-index: 101;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -12,7 +11,7 @@
 
 .logo__image {
   display: block;
-  width: 75px;
-  height: 17px;
+  width: 73px;
+  height: 19px;
   object-fit: contain;
 }
