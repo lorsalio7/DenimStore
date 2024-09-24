@@ -4,4 +4,8 @@
 
 .bestsellers__products {
   margin: 0 -15px;
+
+  @include max-xxs {
+    margin: 0;
+  }
 }

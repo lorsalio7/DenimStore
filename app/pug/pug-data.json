@@ -60,7 +60,7 @@
   "bestsellers": [
     {
       "productUrl": "#",
-      "productImage": "img/bestsellers-jacket.jpg",
+      "productImage": "https://place-hold.it/300x500",
       "productTitle": "Jacket",
       "productPrice": "$120"
     },
