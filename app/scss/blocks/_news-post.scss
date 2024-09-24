@@ -10,9 +10,21 @@
 
 .news-post__image-wrapper {
   flex-shrink: 2;
+  flex-basis: 700px;
+  height: 370px;
 
   @include max-xl {
-    flex: 1;
+    flex-basis: auto;
+    align-self: stretch;
+    height: 330px;
+  }
+
+  @include max-xs {
+    height: 280px;
+  }
+
+  @include max-xxs {
+    height: 240px;
   }
 }
 
@@ -20,7 +32,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .news-post__outer {
