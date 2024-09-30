@@ -1,14 +1,16 @@
 section.catalog.catalog-page__catalog
   .container
     h2.visually-hidden Catalog of women's jackets
-    div(tabindex="0").catalog__filter.dropdown-filter
-      .dropdown-filter__selected
-        p.dropdown-filter__text Filter by
-      ul.dropdown-filter__list
-        li(tabindex="0").dropdown-filter__option Price: Low to High
-        li(tabindex="0").dropdown-filter__option Price: High to Low
-        li(tabindex="0").dropdown-filter__option Name: A-z
-        li(tabindex="0").dropdown-filter__option Name: Z-a
+    div.catalog__filter.sort-filter
+      form(action="#", method="get").sort-filter__form
+        .sort-filter__wrapper
+          label(for="sort-products").visually-hidden Sort products by
+          select#sort-products(name="sort-products").sort-filter__select
+            option(value="") Filter by
+            option(value="price-low-to-high") Price: Low to High
+            option(value="price-high-to-low") Price: High to Low
+            option(value="name-from-a-to-z") Name: A-z
+            option(value="name-from-z-to-a") Name: Z-a
     ul.products.catalog__products.catalog-page__products
       +products-card(pugData.catalogJackets)
     .cards-counter.catalog__cards-counter

@@ -49,16 +49,19 @@
         <section class="catalog catalog-page__catalog">
           <div class="container">
             <h2 class="visually-hidden">Catalog of women's jackets</h2>
-            <div class="catalog__filter dropdown-filter" tabindex="0">
-              <div class="dropdown-filter__selected">
-                <p class="dropdown-filter__text">Filter by</p>
-              </div>
-              <ul class="dropdown-filter__list">
-                <li class="dropdown-filter__option" tabindex="0">Price: Low to High</li>
-                <li class="dropdown-filter__option" tabindex="0">Price: High to Low</li>
-                <li class="dropdown-filter__option" tabindex="0">Name: A-z</li>
-                <li class="dropdown-filter__option" tabindex="0">Name: Z-a</li>
-              </ul>
+            <div class="catalog__filter sort-filter">
+              <form class="sort-filter__form" action="#" method="get">
+                <div class="sort-filter__wrapper">
+                  <label class="visually-hidden" for="sort-products">Sort products by</label>
+                  <select class="sort-filter__select" id="sort-products" name="sort-products">
+                    <option value="">Filter by</option>
+                    <option value="price-low-to-high">Price: Low to High</option>
+                    <option value="price-high-to-low">Price: High to Low</option>
+                    <option value="name-from-a-to-z">Name: A-z</option>
+                    <option value="name-from-z-to-a">Name: Z-a</option>
+                  </select>
+                </div>
+              </form>
             </div>
             <ul class="products catalog__products catalog-page__products">
               <li class="products__card products-card catalog-page__item"><a class="products-card__link" href="#"><img class="products-card__image" src="img/catalog-jacket-1.jpg" width="270" height="349" alt="Jacket"/></a>
