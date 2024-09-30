@@ -1350,6 +1350,10 @@ body {
   margin: 22px 33px;
 }
 
+.catalog-page__item .products-card__link {
+  height: 270px;
+}
+
 .catalog-top {
   background-color: #f1f2f4;
 }
