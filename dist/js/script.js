@@ -45,26 +45,33 @@ burgerMenuWidth.onchange = function (e) {
 };
 var gallerySlider = document.querySelector(".full-card-slider");
 if (gallerySlider) {
-  var productGalleryThumbsSlider = new Swiper(".full-card-slider-thumbs", {
-    slidesPerView: 3,
-    spaceBetween: 40,
+  var galleryNextButton = document.querySelector(".full-card-gallery__button--next");
+  var galleryPrevButton = document.querySelector(".full-card-gallery__button--prev");
+  var productGalleryThumbsSlider = new Splide(".full-card-slider-thumbs", {
+    pagination: false,
+    arrows: false,
+    isNavigation: true,
+    perPage: 4,
+    gap: 20,
+    mediaQuery: "max",
     breakpoints: {
-      500: {
-        slidesPerView: 4,
-        spaceBetween: 20
+      950: {
+        perPage: 3
       }
     }
+  }).mount();
+  var productGallery = new Splide(gallerySlider, {
+    pagination: false,
+    arrows: false,
+    rewind: true,
+    gap: 20
+  }).mount();
+  productGallery.sync(productGalleryThumbsSlider);
+  galleryNextButton.addEventListener("click", function () {
+    productGallery.go("+1");
   });
-  var productGallery = new Swiper(gallerySlider, {
-    loop: false,
-    spaceBetween: 30,
-    navigation: {
-      nextEl: ".full-card-gallery__button--next",
-      prevEl: ".full-card-gallery__button--prev"
-    },
-    thumbs: {
-      swiper: productGalleryThumbsSlider
-    }
+  galleryPrevButton.addEventListener("click", function () {
+    productGallery.go("-1");
   });
 }
 ;

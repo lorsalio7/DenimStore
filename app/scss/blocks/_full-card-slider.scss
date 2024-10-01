@@ -1,6 +1,18 @@
 .full-card-slider__image {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: 523px;
+  object-fit: cover;
+
+  @include max-md {
+    height: 470px;
+  }
+
+  @include max-xs {
+    height: 430px;
+  }
+
+  @include max-xxs {
+    height: 350px;
+  }
 }

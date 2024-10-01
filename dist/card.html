@@ -7,7 +7,7 @@
     <title>Card product | Nimes - online store of jeans</title>
     <link rel="shortcut icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="libs/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="libs/css/splide.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="card-page__body full-height">
@@ -36,25 +36,29 @@
             <article class="full-card product__card">
               <div class="product__gallery">
                 <div class="full-card__gallery full-card-gallery">
-                  <button class="swiper-button-next full-card-gallery__button full-card-gallery__button--next" type="button"></button>
-                  <button class="swiper-button-prev full-card-gallery__button full-card-gallery__button--prev" type="button"></button>
+                  <button class="full-card-gallery__button full-card-gallery__button--next" type="button"></button>
+                  <button class="full-card-gallery__button full-card-gallery__button--prev" type="button"></button>
                   <div class="full-card-gallery__sliders">
-                    <div class="swiper full-card-slider full-card-gallery__slider">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide full-card-slider__slide"><img class="full-card-slider__image" src="img/card-image-5.jpg" width="400" height="523" alt="Overalls photo 5"></div>
-                        <div class="swiper-slide full-card-slider__slide"><img class="full-card-slider__image" src="img/card-image-1.jpg" width="400" height="523" alt="Overalls photo 1"></div>
-                        <div class="swiper-slide full-card-slider__slide"><img class="full-card-slider__image" src="img/card-image-2.jpg" width="400" height="523" alt="Overalls photo 2"></div>
-                        <div class="swiper-slide full-card-slider__slide"><img class="full-card-slider__image" src="img/card-image-3.jpg" width="400" height="523" alt="Overalls photo 3"></div>
-                        <div class="swiper-slide full-card-slider__slide"><img class="full-card-slider__image" src="img/card-image-4.jpg" width="400" height="523" alt="Overalls photo 4"></div>
+                    <div class="splide full-card-slider full-card-gallery__slider">
+                      <div class="splide__track">
+                        <ul class="splide__list">
+                          <li class="splide__slide full-card-slider__slide"><img class="full-card-slider__image" src="img/card-image-5.jpg" width="400" height="523" alt="Overalls photo 5"></li>
+                          <li class="splide__slide full-card-slider__slide"><img class="full-card-slider__image" src="img/card-image-1.jpg" width="400" height="523" alt="Overalls photo 1"></li>
+                          <li class="splide__slide full-card-slider__slide"><img class="full-card-slider__image" src="img/card-image-2.jpg" width="400" height="523" alt="Overalls photo 2"></li>
+                          <li class="splide__slide full-card-slider__slide"><img class="full-card-slider__image" src="img/card-image-3.jpg" width="400" height="523" alt="Overalls photo 3"></li>
+                          <li class="splide__slide full-card-slider__slide"><img class="full-card-slider__image" src="img/card-image-4.jpg" width="400" height="523" alt="Overalls photo 4"></li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="swiper full-card-slider-thumbs" thumbsslider>
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide full-card-slider-thumbs__slide"><img class="full-card-slider-thumbs__image" src="img/card-image-5-thumb.jpg" width="85" height="113"></div>
-                        <div class="swiper-slide full-card-slider-thumbs__slide"><img class="full-card-slider-thumbs__image" src="img/card-image-1-thumb.jpg" width="85" height="113"></div>
-                        <div class="swiper-slide full-card-slider-thumbs__slide"><img class="full-card-slider-thumbs__image" src="img/card-image-2-thumb.jpg" width="85" height="113"></div>
-                        <div class="swiper-slide full-card-slider-thumbs__slide"><img class="full-card-slider-thumbs__image" src="img/card-image-3-thumb.jpg" width="85" height="113"></div>
-                        <div class="swiper-slide full-card-slider-thumbs__slide"><img class="full-card-slider-thumbs__image" src="img/card-image-4-thumb.jpg" width="85" height="113"></div>
+                    <div class="splide full-card-slider-thumbs">
+                      <div class="splide__track">
+                        <ul class="splide__list">
+                          <li class="splide__slide full-card-slider-thumbs__slide"><img class="full-card-slider-thumbs__image" src="img/card-image-5-thumb.jpg" width="85" height="113"></li>
+                          <li class="splide__slide full-card-slider-thumbs__slide"><img class="full-card-slider-thumbs__image" src="img/card-image-1-thumb.jpg" width="85" height="113"></li>
+                          <li class="splide__slide full-card-slider-thumbs__slide"><img class="full-card-slider-thumbs__image" src="img/card-image-2-thumb.jpg" width="85" height="113"></li>
+                          <li class="splide__slide full-card-slider-thumbs__slide"><img class="full-card-slider-thumbs__image" src="img/card-image-3-thumb.jpg" width="85" height="113"></li>
+                          <li class="splide__slide full-card-slider-thumbs__slide"><img class="full-card-slider-thumbs__image" src="img/card-image-4-thumb.jpg" width="85" height="113"></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -155,7 +159,7 @@
         </div>
       </footer>
     </div>
-    <script src="libs/js/swiper-bundle.min.js"></script>
+    <script src="libs/js/splide.min.js"></script>
     <script src="libs/js/focus-visible.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
