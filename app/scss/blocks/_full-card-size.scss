@@ -1,5 +1,9 @@
 .full-card-size .full-card__subtitle {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
+}
+
+.full-card-size__selection {
+  text-indent: -6px;
 }
 
 .full-card-size__label {
@@ -15,7 +19,7 @@
 }
 
 .full-card-size__label:not(:last-of-type) {
-  margin-right: 15px;
+  margin-right: 9px;
 }
 
 .full-card-size__item {

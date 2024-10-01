@@ -81,7 +81,7 @@
 
 .site-header__site-navigation--active {
   @include max-md {
-    transform: translateY(100%);
+    transform: translateY(calc(100% - 1px));
     transition: transform 0.3s linear;
   }
 }
