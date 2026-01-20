@@ -83,7 +83,7 @@
   z-index: 1;
   width: 232px;
   height: 176px;
-  background-image: url("../img/catalog-top-right-decor.png");
+  background-image: url("../img/decor/catalog-top-right-decor.png");
   background-repeat: no-repeat;
 
   @include max-xxs {
@@ -98,7 +98,7 @@
   bottom: 0;
   width: 175px;
   height: 135px;
-  background-image: url("../img/catalog-top-left-decor.png");
+  background-image: url("../img/decor/catalog-top-left-decor.png");
   background-repeat: no-repeat;
 
   @include max-xxs {

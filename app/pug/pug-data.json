@@ -60,25 +60,25 @@
   "bestsellers": [
     {
       "productUrl": "#",
-      "productImage": "img/bestsellers-jacket.jpg",
+      "productImage": "img/content/bestsellers/bestsellers-jacket.jpg",
       "productTitle": "Jacket",
       "productPrice": "$120"
     },
     {
       "productUrl": "#",
-      "productImage": "img/bestsellers-overalls.jpg",
+      "productImage": "img/content/bestsellers/bestsellers-overalls.jpg",
       "productTitle": "Overalls",
       "productPrice": "$140"
     },
     {
       "productUrl": "#",
-      "productImage": "img/bestsellers-jacket-2.jpg",
+      "productImage": "img/content/bestsellers/bestsellers-jacket-2.jpg",
       "productTitle": "Jacket",
       "productPrice": "$90"
     },
     {
       "productUrl": "#",
-      "productImage": "img/bestsellers-overalls-2.jpg",
+      "productImage": "img/content/bestsellers/bestsellers-overalls-2.jpg",
       "productTitle": "Overalls",
       "productPrice": "$160"
     }
@@ -86,22 +86,22 @@
   "categories": [
     {
       "productUrl": "#",
-      "productImage": "img/category-jeans.jpg",
+      "productImage": "img/content/category/category-jeans.jpg",
       "productTitle": "Jeans"
     },
     {
       "productUrl": "#",
-      "productImage": "img/category-shirts.jpg",
+      "productImage": "img/content/category/category-shirts.jpg",
       "productTitle": "Shirts"
     },
     {
       "productUrl": "#",
-      "productImage": "img/category-jackets.jpg",
+      "productImage": "img/content/category/category-jackets.jpg",
       "productTitle": "Jackets"
     },
     {
       "productUrl": "#",
-      "productImage": "img/category-overalls.jpg",
+      "productImage": "img/content/category/category-overalls.jpg",
       "productTitle": "Overalls"
     }
   ],
@@ -125,49 +125,49 @@
   "catalogJackets": [
     {
       "productUrl": "#",
-      "productImage": "img/catalog-jacket-1.jpg",
+      "productImage": "img/content/catalog/catalog-jacket-1.jpg",
       "productTitle": "Jacket",
       "productPrice": "$40"
     },
     {
       "productUrl": "#",
-      "productImage": "img/catalog-jacket-2.jpg",
+      "productImage": "img/content/catalog/catalog-jacket-2.jpg",
       "productTitle": "Jacket",
       "productPrice": "$70"
     },
     {
       "productUrl": "#",
-      "productImage": "img/catalog-jacket-3.jpg",
+      "productImage": "img/content/catalog/catalog-jacket-3.jpg",
       "productTitle": "Jacket",
       "productPrice": "$60"
     },
     {
       "productUrl": "#",
-      "productImage": "img/catalog-jacket-4.jpg",
+      "productImage": "img/content/catalog/catalog-jacket-4.jpg",
       "productTitle": "Jacket",
       "productPrice": "$50"
     },
     {
       "productUrl": "#",
-      "productImage": "img/catalog-jacket-5.jpg",
+      "productImage": "img/content/catalog/catalog-jacket-5.jpg",
       "productTitle": "Jacket",
       "productPrice": "$40"
     },
     {
       "productUrl": "#",
-      "productImage": "img/catalog-jacket-6.jpg",
+      "productImage": "img/content/catalog/catalog-jacket-6.jpg",
       "productTitle": "Jacket",
       "productPrice": "$110"
     },
     {
       "productUrl": "#",
-      "productImage": "img/catalog-jacket-7.jpg",
+      "productImage": "img/content/catalog/catalog-jacket-7.jpg",
       "productTitle": "Jacket",
       "productPrice": "$35"
     },
     {
       "productUrl": "#",
-      "productImage": "img/catalog-jacket-8.jpg",
+      "productImage": "img/content/catalog/catalog-jacket-8.jpg",
       "productTitle": "Jacket",
       "productPrice": "$85"
     }
@@ -175,25 +175,25 @@
   "extraProducts": [
     {
       "productUrl": "#",
-      "productImage": "img/extra-image-1.jpg",
+      "productImage": "img/content/extra/extra-image-1.jpg",
       "productTitle": "Overalls",
       "productPrice": "$140"
     },
     {
       "productUrl": "#",
-      "productImage": "img/extra-image-2.jpg",
+      "productImage": "img/content/extra/extra-image-2.jpg",
       "productTitle": "Overalls",
       "productPrice": "$110"
     },
     {
       "productUrl": "#",
-      "productImage": "img/extra-image-3.jpg",
+      "productImage": "img/content/extra/extra-image-3.jpg",
       "productTitle": "Jacket",
       "productPrice": "$70"
     },
     {
       "productUrl": "#",
-      "productImage": "img/extra-image-4.jpg",
+      "productImage": "img/content/extra/extra-image-4.jpg",
       "productTitle": "Jacket",
       "productPrice": "$60"
     }
